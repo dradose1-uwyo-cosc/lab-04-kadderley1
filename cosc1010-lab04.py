@@ -1,8 +1,9 @@
-# Your Name Here
+
+#Koi Adderley
 # UWYO COSC 1010
-# Submission Date
+# 1/10/2024
 # Lab 03 
-# Lab Section: 
+# Lab Section: 11
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -96,10 +97,49 @@ min_temps = [
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
+
+total = 0
+count = 0
+
+for temp in max_temps:
+    total += temp
+    count += 1
+
+average_temp = total / count if count > 0 else 0
+print("Average Maximum Temperature:", average_temp)
+
+total_temp = 0
+count = 0
+
+
+
+
+for temp in min_temps:
+    total_temp += temp
+    count += 1
+
+average_temp = total_temp / count if count > 0 else 0
+
+print(f"The average minimum temperature is: {average_temp:.2f}")
+
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
 # For the next part, determine the highest and lowest recorded temperatures.
-# HINT: You can find this information without using any logic or looping.
+# HINT: You can find this information without usingany logic or looping.
 
+total_min = 0
+total_max = 0
+count = 0
 
+for min_temp, max_temp in zip(min_temps, max_temps):
+    total_min += min_temp
+    total_max += max_temp
+    count += 1
+
+max_temps.sort()
+min_temps.sort()
+print(max_temps[0])
+print(max_temps[-1])
+print(min_temps[0])
+print(min_temps[-1])

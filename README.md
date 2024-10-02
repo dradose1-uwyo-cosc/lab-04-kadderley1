@@ -1,6 +1,6 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Koi Adderley]
+## [Assignment #4]
+## [Submission date: 10/01/2024]
 ## Worked with/sources 
 * example
 * example
